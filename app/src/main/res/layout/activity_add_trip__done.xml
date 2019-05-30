@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTrip_Done">
+    <TextView
+        android:id="@+id/tv"
+        android:text="Thêm bạn bè cho chuyến đi này"
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <ListView
+        android:id="@+id/list_banbe_check"
+        android:layout_below="@+id/tv"
+        android:layout_above="@+id/taonhomchat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <LinearLayout
+        android:id="@+id/taonhomchat"
+        android:layout_above="@+id/btn_ok"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv2"
+            android:text="Tạo nhóm chat"
+            android:textSize="26dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:id="@+id/btn_switch"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_ok"
+        android:text="Hoàn thành"
+        android:textColor="#FFF"
+        android:paddingHorizontal="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

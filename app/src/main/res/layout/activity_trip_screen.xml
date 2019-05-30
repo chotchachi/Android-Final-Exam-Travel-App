@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TripScreen"
+    android:background="@color/fragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            //Thời tiết
+            <LinearLayout
+                android:id="@+id/thoitiet_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/edittext1"
+                    android:padding="20dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/icon_location"
+                            android:layout_width="28dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/location"/>
+                        <TextView
+                            android:id="@+id/tv_city"
+                            android:text="Thành phố"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/icon_location"
+                            android:layout_marginLeft="5dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tv_temp"
+                            android:text="26"
+                            android:textSize="50dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_status"
+                            android:text="Sunny"
+                            android:textSize="18dp"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_temp" />
+                        <ImageView
+                            android:id="@+id/icon_thoitiet"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            //Khác
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="10dp">
+                //Cột 1
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+                    //Ô hotel
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/bg1">
+                        <Button
+                            android:id="@+id/btn_1"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/hotel"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+                        <TextView
+                            android:layout_below="@+id/btn_1"
+                            android:text="Tìm phòng khách sạn"
+                            android:layout_marginTop="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+                    //Ô album
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@drawable/bg2"
+                        android:paddingVertical="20dp"
+                        android:layout_marginTop="10dp">
+                        <Button
+                            android:id="@+id/btn_2"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/picture2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+                        <TextView
+                            android:layout_below="@+id/btn_2"
+                            android:text="Album ảnh"
+                            android:layout_marginTop="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+                //Cột 2
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+                    //Ô foood
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="@drawable/bg4">
+                        <Button
+                            android:id="@+id/btn_3"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/food"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+                        <TextView
+                            android:layout_below="@+id/btn_3"
+                            android:text="Quán ăn gần bạn"
+                            android:layout_marginTop="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+                    //Ô
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/bg3"
+                        android:paddingVertical="20dp"
+                        android:layout_marginTop="10dp">
+                        <Button
+                            android:id="@+id/btn_4"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/aeroplane"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+                        <TextView
+                            android:layout_below="@+id/btn_4"
+                            android:text="Phương tiện"
+                            android:layout_marginTop="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

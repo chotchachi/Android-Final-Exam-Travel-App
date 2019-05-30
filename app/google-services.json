@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1007543768663",
+    "firebase_url": "https://dulich-ae09a.firebaseio.com",
+    "project_id": "dulich-ae09a",
+    "storage_bucket": "dulich-ae09a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007543768663:android:ade564fd9e5aa0c4",
+        "android_client_info": {
+          "package_name": "com.example.dulich"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007543768663-3d081o7i5ksr797qth9idr44p6159v6c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dulich",
+            "certificate_hash": "7f7167f35b766f2db4b5879f14b85efb2c5f3ceb"
+          }
+        },
+        {
+          "client_id": "1007543768663-33mk1np028po9o4608i35b99glal5jmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB8e0ShChzfDUkz_qA71GgfnxesG5LOeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007543768663-33mk1np028po9o4608i35b99glal5jmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

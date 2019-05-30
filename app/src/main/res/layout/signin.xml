@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+        <EditText
+            android:id="@+id/hovaten"
+            android:inputType="textPersonName"
+            android:hint="   Họ và tên"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext1"/>
+        <EditText
+            android:id="@+id/birth"
+            android:hint="   Ngày/Tháng/Năm sinh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="date"
+            android:background="@drawable/edittext1"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/username"
+            android:hint="   Username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext1"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/password"
+            android:hint="   Password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext1"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+        <Button
+            android:id="@+id/btn_dangky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:background="@drawable/button3"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_dangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:textColor="#00EE76"
+            android:background="@drawable/button2"/>
+    </LinearLayout>
+</LinearLayout>

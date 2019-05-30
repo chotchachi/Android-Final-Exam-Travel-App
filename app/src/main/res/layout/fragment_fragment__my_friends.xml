@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.Fragment_MyFriends"
+    android:padding="20dp"
+    android:background="@color/fragment">
+    <LinearLayout
+        android:id="@+id/them_banbe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext1"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:src="@drawable/add_friends"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:text="Thêm bạn bè"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/danhsach_banbe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext1"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:src="@drawable/friendship"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:text="Danh sách bạn bè"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/timquanhday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext1"
+        android:padding="10dp">
+        <ImageView
+            android:src="@drawable/area"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:text="Tìm quanh đây"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

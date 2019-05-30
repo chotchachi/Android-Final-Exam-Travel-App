@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homescreen"
+        android:icon="@drawable/trip"
+        android:title="Trip" />
+
+    <item
+        android:id="@+id/chatscreen"
+        android:icon="@drawable/mess_icon"
+        android:title="Tin nhắn" />
+
+    <item
+        android:id="@+id/nhatkyscreen"
+        android:icon="@drawable/clock"
+        android:title="Hoạt động" />
+
+    <item
+        android:id="@+id/friendscreen"
+        android:icon="@drawable/friendship"
+        android:title="Bạn bè" />
+
+</menu>
