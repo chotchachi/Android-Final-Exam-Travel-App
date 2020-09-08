@@ -1,7 +1,7 @@
 package com.example.dulich;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
 
@@ -22,7 +22,7 @@ public class PhuongTienActivity extends AppCompatActivity {
                 webView.loadUrl("https://www.bestprice.vn/ve-may-bay/");
                 break;
             case "train":
-                webView.loadUrl("http://vetautructuyen.vn/");
+                webView.loadUrl("http://vetau.com.vn/#/");
                 break;
         }
     }

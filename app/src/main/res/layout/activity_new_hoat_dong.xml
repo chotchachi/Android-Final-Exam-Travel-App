@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".NewHoatDongActivity">
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         app:navigationIcon="@drawable/ic_arrow_back"
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:layout_marginRight="20dp"
         android:textColor="@android:color/white"
         style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
     <RelativeLayout
         android:id="@+id/middle"
         android:layout_below="@+id/toolbar"

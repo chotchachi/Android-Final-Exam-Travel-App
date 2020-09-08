@@ -34,7 +34,7 @@
             android:layout_marginTop="10dp"/>
         <EditText
             android:id="@+id/username"
-            android:hint="   Username"
+            android:hint="   Email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edittext1"

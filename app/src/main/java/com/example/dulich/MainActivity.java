@@ -6,16 +6,19 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.provider.Settings;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -99,9 +102,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onPermissionDenied(PermissionDeniedResponse response) {
-                if (response.isPermanentlyDenied()){
-                    ShowSettingDialog();
-                }
+                ShowSettingDialog();
+
             }
 
             @Override
@@ -118,10 +120,10 @@ public class MainActivity extends AppCompatActivity {
         builder.setNegativeButton("Mở cài đặt", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                /*Intent i = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                Intent i = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
                 Uri uri = Uri.fromParts("package", getPackageName(), null);
                 i.setData(uri);
-                startActivityForResult(i, 1);*/
+                startActivityForResult(i, 1);
             }
         });
         builder.setPositiveButton("Hủy", new DialogInterface.OnClickListener() {

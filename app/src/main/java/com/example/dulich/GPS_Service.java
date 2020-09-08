@@ -9,9 +9,9 @@ import android.location.Location;
 import android.os.Handler;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
 
 import com.example.dulich.Object.User;
 import com.example.dulich.Object.UserLocation;
@@ -102,12 +102,14 @@ public class GPS_Service extends Service {
             public void onComplete(@NonNull Task<Location> task) {
                 if (task.isSuccessful()){
                     Location location = task.getResult();
-                    GeoPoint geoPoint = new GeoPoint(location.getLatitude(), location.getLongitude());
-                    userLocation = new UserLocation();
-                    userLocation.setGeoPoint(geoPoint);
-                    userLocation.setUser(user);
-                    //Sau khi lấy được vị trí thì gửi lên Firebase
-                    SaveUserLocation();
+                    if (location != null) {
+                        GeoPoint geoPoint = new GeoPoint(location.getLatitude(), location.getLongitude());
+                        userLocation = new UserLocation();
+                        userLocation.setGeoPoint(geoPoint);
+                        userLocation.setUser(user);
+                        //Sau khi lấy được vị trí thì gửi lên Firebase
+                        SaveUserLocation();
+                    }
                 }
             }
         });

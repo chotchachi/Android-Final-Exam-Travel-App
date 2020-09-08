@@ -25,7 +25,7 @@
         <activity android:name=".AlbumTripActivity" />
         <activity android:name=".KhachSanActivity" />
         <activity android:name=".NewHoatDongActivity" />
-        <activity android:name=".WelcomScreen">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,7 +42,7 @@
         <activity android:name=".ThemBanBeActivity" />
         <activity android:name=".Login" />
         <activity android:name=".SignIn" />
-        <activity android:name=".AddTripActivity" />
+        <activity  android:name=".AddTripActivity" />
 
         <service android:name=".GPS_Service" />
 
@@ -52,7 +52,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" /> <!-- cache directory file provider paths -->
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">

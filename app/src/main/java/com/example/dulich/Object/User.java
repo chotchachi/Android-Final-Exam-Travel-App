@@ -6,13 +6,15 @@ public class User {
     String hovaten;
     String avatar_url;
     String sinh_nhat;
+    String password;
 
-    public User(String username, String user_id, String hovaten, String avatar_url, String sinh_nhat) {
+    public User(String username, String user_id, String hovaten, String avatar_url, String sinh_nhat, String password) {
         this.username = username;
         this.user_id = user_id;
         this.hovaten = hovaten;
         this.avatar_url = avatar_url;
         this.sinh_nhat = sinh_nhat;
+        this.password = password;
     }
 
     public User(){
@@ -56,5 +58,13 @@ public class User {
 
     public void setSinh_nhat(String sinh_nhat) {
         this.sinh_nhat = sinh_nhat;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

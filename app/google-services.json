@@ -42,6 +42,43 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007543768663:android:aad12eb6bb140eae",
+        "android_client_info": {
+          "package_name": "com.example.mapapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007543768663-dqll4j8aq5tdpq3qgsjbi013apj2c13f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mapapi",
+            "certificate_hash": "7f7167f35b766f2db4b5879f14b85efb2c5f3ceb"
+          }
+        },
+        {
+          "client_id": "1007543768663-33mk1np028po9o4608i35b99glal5jmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB8e0ShChzfDUkz_qA71GgfnxesG5LOeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007543768663-33mk1np028po9o4608i35b99glal5jmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
